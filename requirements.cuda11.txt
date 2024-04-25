@@ -20,9 +20,9 @@ scipy>=1.4.1                # Installing SciPy, a library for mathematics, scien
 
 ## For CUDA 11.7
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.13.0+cu117     # Installing PyTorch, an open source machine learning framework
+torch==1.13.0+cu117         # Installing PyTorch, an open source machine learning framework
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torchvision==0.14.0+cu117 # Installing TorchVision, for working with computer vision models
+torchvision==0.14.0+cu117   # Installing TorchVision, for working with computer vision models
 
 tqdm>=4.64.0                # Installing tdqm, the Fast, Extensible Progress Meter
 
@@ -33,10 +33,6 @@ protobuf<=3.20.1            # Installing protobuf, extensible mechanisms for ser
 tensorboard>=2.4.1          # Installing tensorboard, a tool to let you watch Tensors Flow
 # wandb
 # clearml
-
-# Plotting ------------------------------------
-pandas>=1.1.4               # Installing Pandas, a data analysis / data manipulation tool
-seaborn>=0.11.0             # Installing Seaborn, a data visualization library based on matplotlib
 
 # Plotting ------------------------------------
 pandas>=1.1.4               # Installing Pandas, a data analysis / data manipulation tool

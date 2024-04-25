@@ -1,20 +1,22 @@
 # YOLOv5 requirements
 # Usage: pip install -r requirements.txt
 
-urllib3<1.27,>=1.25.4   # Installing urllib3, the HTTP client for Python
+urllib3<1.27,>=1.25.4       # Installing urllib3, the HTTP client for Python
 
 # Base ----------------------------------------
-matplotlib>=3.2.2       # Installing matplotlib, the python plotting package
-numpy>=1.18.5           # Installing NumPy, a package for scientific computing
-opencv-python>=4.1.1    # Installing OpenCV, the Open source Computer Vision library
-Pillow<10.0.0           # Installing Pillow, a Python Image Library
-PyYAML>=5.3.1           # Installing PyYAML, a library for reading configuration files
-requests>=2.23.0        # Installing request, the HTTP library
-scipy>=1.4.1            # Installing SciPy, a library for mathematics, science, and engineering
+matplotlib>=3.2.2           # Installing matplotlib, the python plotting package
+numpy>=1.18.5               # Installing NumPy, a package for scientific computing
+opencv-python>=4.1.1        # Installing OpenCV, the Open source Computer Vision library
+Pillow<10.0.0               # Installing Pillow, a Python Image Library
+PyYAML>=5.3.1               # Installing PyYAML, a library for reading configuration files
+requests>=2.23.0            # Installing request, the HTTP library
+scipy>=1.4.1                # Installing SciPy, a library for mathematics, science, and engineering
+
 # --find-links https://download.pytorch.org/whl/torch_stable.html
-torch>=1.7.0            # Installing Torch, for Tensor computation and Deep neural networks
-torchvision>=0.8.1      # Installing TorchVision, for Computer Vision based AI
-tqdm>=4.64.0            # Installing tdqm, the Fast, Extensible Progress Meter
+torch>=1.7.0                # Installing Torch, for Tensor computation and Deep neural networks
+torchvision>=0.8.1          # Installing TorchVision, for Computer Vision based AI
+
+tqdm>=4.64.0                # Installing tdqm, the Fast, Extensible Progress Meter
 
 # This is to fix an issue at https://github.com/ultralytics/yolov5/issues/8012
 protobuf<=3.20.1            # Installing protobuf, extensible mechanisms for serializing structured data
