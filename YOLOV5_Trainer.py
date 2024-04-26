@@ -5,10 +5,10 @@
 from datetime import datetime, timedelta
 import os
 import shutil
-from common import JSON, timedelta_format
 
 # Import CodeProject.AI SDK
-from codeproject_ai_sdk import RequestData, ModuleRunner, LogMethod
+from codeproject_ai_sdk import RequestData, ModuleRunner, LogMethod, JSON, timedelta_format
+
 
 import tqdm
 from pyexpat import model
