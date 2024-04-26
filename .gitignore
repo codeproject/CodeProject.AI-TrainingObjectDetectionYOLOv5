@@ -16,3 +16,6 @@ assets/
 
 # Python install / Virtual environment
 bin/
+/datasets/bob2
+/fiftyone
+/zoo/open-images-v7
