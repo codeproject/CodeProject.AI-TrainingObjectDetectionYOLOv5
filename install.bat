@@ -14,7 +14,7 @@
 )
 
 :: Download the YOLO models and custom models and store in /assets
-call "%sdkScriptsDirPath%\utils.bat" GetFromServer "models/" "models-yolo5-pt.zip" "assets" "Downloading Standard YOLO models..."
+call "%utilsScript%" GetFromServer "models/" "models-yolo5-pt.zip" "assets" "Downloading Standard YOLO models..."
 
 REM TODO: Check assets created and has files
 REM set moduleInstallErrors=...
