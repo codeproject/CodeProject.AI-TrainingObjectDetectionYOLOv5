@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "presentation": {
+                "group": "Start",
+                "hidden": false
+            },
+
+            "name": "Launch Training YOLOv5",
+            "type": "debugpy",
+            "justMyCode": false,
+            "request": "launch",
+            "program": "training_objectdetection_YOLOv5_adapter.py",
+            // "args": [ "--selftest" ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+
+            "env": {
+                "DEBUG_IN_VSCODE": "True",
+                "RUNNING_IN_VSCODE": "True",
+                // "CPAI_LOG_VERBOSITY": "Loud",
+                "CPAI_PORT": "32168",
+
+                "CPAI_MODULE_REQUIRED_MB":  "1000",
+
+                "YOLOv5_AUTOINSTALL": "false",
+                "YOLOv5_VERBOSE":     "false",
+                
+                "YOLO_DATASETS_DIRNAME":    "datasets",
+                "YOLO_TRAINING_DIRNAME":    "train",    // compatible with tutorials and default
+                "YOLO_WEIGHTS_DIRNAME":     "weights",
+                "YOLO_MODELS_DIRNAME":      "assets",
+                "YOLO_DATASET_ZOO_DIRNAME": "zoo",
+                "FIFTYONE_DATABASE_DIRNAME": "fiftyone"
+            },
+
+            "python": "${workspaceFolder}\\bin\\windows\\python37\\venv\\Scripts\\python.exe",
+            "windows": {
+                "python": "${workspaceFolder}/bin/windows/python37/venv/Scripts/python.exe"
+            },
+            "linux": {
+                "python": "${workspaceFolder}/bin/linux/python38/venv/bin/python",
+            },
+            "osx": {
+                "python": "${workspaceFolder}/bin/macos/python38/venv/bin/python",
+            }
+        }
+    ]
+}
