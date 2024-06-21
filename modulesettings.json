@@ -3,7 +3,7 @@
 
     "TrainingObjectDetectionYOLOv5": {
       "Name": "Training for YoloV5 6.2",
-      "Version": "1.6.3",
+      "Version": "1.6.4",
 
       "PublishingInfo" : {
         "Description": "Train custom models for YOLOv5 v6.2 with support for CPUs, CUDA enabled GPUs, and Apple Silicon.", 
@@ -53,11 +53,12 @@
           { "ModuleVersion": "1.5.0", "ServerVersionRange": [ "2.5.0-RC1", "2.5.0-RC5" ], "ReleaseDate": "2024-01-06", "ReleaseNotes": "Additions for dynamic explorer UI" },
           { "ModuleVersion": "1.5.1", "ServerVersionRange": [ "2.5.0-RC1", "2.5.0-RC5" ], "ReleaseDate": "2024-01-13", "ReleaseNotes": "Changes to SDK" },
           { "ModuleVersion": "1.5.2", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-16", "ReleaseNotes": "Updated modulesettings schema" },
-          { "ModuleVersion": "1.5.3", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
-          { "ModuleVersion": "1.6.0", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
-          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2", ""     ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
-          { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4", ""     ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
-          { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4", ""     ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." }
+          { "ModuleVersion": "1.5.3", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
+          { "ModuleVersion": "1.6.0", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
+          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2",     ""    ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
+          { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
+          { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." },
+          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrections for numpy install issue" }
        ]
       },
 
