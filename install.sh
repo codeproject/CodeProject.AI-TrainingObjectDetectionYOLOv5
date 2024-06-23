@@ -92,6 +92,8 @@ if [ "$os_name" = "Big Sur" ]; then   # macOS 11.x on Intel, kernal 20.x
     installPythonPackagesByName "opencv-python==4.6.0.66" "OpenCV 4.6.0.66 for macOS 11.x"
 fi
 
+mkdir fiftyone
+
 if [ "$module_install_errors" = "" ]; then
     # Download the models and store in /assets and /custom-models (already in place in docker)
     getFromServer "models/" "models-yolo5-pt.zip"       "assets" "Downloading Standard YOLO models..."

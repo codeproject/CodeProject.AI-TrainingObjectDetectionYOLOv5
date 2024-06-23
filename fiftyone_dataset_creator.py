@@ -14,6 +14,7 @@ from codeproject_ai_sdk import RequestData, ModuleRunner, JSON, get_folder_size
 from utils import Actions, ActionStates, ProgressHandler, InitializationError
 
 class YoloV5DatasetCreator:
+    
     def __init__(self, runner:ModuleRunner, module_path:str, fiftyone_dirname:str, zoo_dirname:str, 
                  datasets_dirname:str, server_root_path:str):
         self.runner           = runner
@@ -45,6 +46,12 @@ class YoloV5DatasetCreator:
         # fiftyone mongodb by having it all sit under the current module's folder
         fiftyone_path = os.path.normpath(os.path.join(self.module_path, self.fiftyone_dirname))
         os.environ["FIFTYONE_DATABASE_DIR"] = fiftyone_path
+
+        try:
+            if not os.path.exists(fiftyone_path):
+                os.mkdir(fiftyone_path)
+        except Exception as pathdir_ex:
+            message = F"Unable to create fiftyone folder: {pathdir_ex}"
 
         # We'll import and fail quickly if needed
         try:
