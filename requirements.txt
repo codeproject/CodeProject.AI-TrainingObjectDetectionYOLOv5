@@ -12,9 +12,11 @@ PyYAML>=5.3.1               # Installing PyYAML, a library for reading configura
 requests>=2.23.0            # Installing request, the HTTP library
 scipy>=1.4.1                # Installing SciPy, a library for mathematics, science, and engineering
 
-# --find-links https://download.pytorch.org/whl/torch_stable.html
-torch>=1.7.0                # Installing Torch, for Tensor computation and Deep neural networks
-torchvision>=0.8.1          # Installing TorchVision, for Computer Vision based AI
+# CPU specific Torch 1.13.0. Size ~830Mb
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==1.13.0+cpu               # Installing PyTorch, for Tensor computation and Deep neural networks
+--extra-index-url https://download.pytorch.org/whl/cpu
+torchvision==0.14.0+cpu         # Installing TorchVision, for Computer Vision based AI
 
 tqdm>=4.64.0                # Installing tdqm, the Fast, Extensible Progress Meter
 
