@@ -58,7 +58,7 @@
           { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2",     ""    ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
           { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
           { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." },
-          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrections for numpy install issue" }
+          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected Numpy 2.0 issue" }
        ]
       },
 
