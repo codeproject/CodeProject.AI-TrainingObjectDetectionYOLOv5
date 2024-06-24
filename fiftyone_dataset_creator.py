@@ -47,11 +47,11 @@ class YoloV5DatasetCreator:
         fiftyone_path = os.path.normpath(os.path.join(self.module_path, self.fiftyone_dirname))
         os.environ["FIFTYONE_DATABASE_DIR"] = fiftyone_path
 
-        try:
-            if not os.path.exists(fiftyone_path):
-                os.mkdir(fiftyone_path)
-        except Exception as pathdir_ex:
-            message = F"Unable to create fiftyone folder: {pathdir_ex}"
+        # try:
+        #    if not os.path.exists(fiftyone_path):
+        #        os.mkdir(fiftyone_path)
+        # except Exception as pathdir_ex:
+        #     message = F"Unable to create fiftyone folder: {pathdir_ex}"
 
         # We'll import and fail quickly if needed
         try:
