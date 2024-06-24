@@ -13,8 +13,6 @@
     @goto:eof
 )
 
-mkdir fiftyone
-
 :: Download the YOLO models and custom models and store in /assets
 call "%utilsScript%" GetFromServer "models/" "models-yolo5-pt.zip" "assets" "Downloading Standard YOLO models..."
 
