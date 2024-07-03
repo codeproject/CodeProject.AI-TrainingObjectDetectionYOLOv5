@@ -3,7 +3,7 @@
 
     "TrainingObjectDetectionYOLOv5": {
       "Name": "Training for YoloV5 6.2",
-      "Version": "1.6.4",
+      "Version": "1.6.5",
 
       "PublishingInfo" : {
         "Description": "Train custom models for YOLOv5 v6.2 with support for CPUs, CUDA enabled GPUs, and Apple Silicon.", 
@@ -21,7 +21,7 @@
       "LaunchSettings": {
         "AutoStart": false,
         "FilePath": "training_objectdetection_YOLOv5_adapter.py",
-        "Runtime": "python3.8",
+        "Runtime": "python3.10",
         "RuntimeLocation": "Local",       // Can be Local, Shared or System. If Local, update install.* files.
         "PostStartPauseSecs": 1,          // Generally 1 if using GPU, 0 for CPU
         "Queue": null,                    // default is lower(module_id) + '_queue'
@@ -58,7 +58,8 @@
           { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2",     ""    ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
           { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
           { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." },
-          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected Numpy 2.0 issue" }
+          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected Numpy 2.0 issue" },
+          { "ModuleVersion": "1.6.5", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Moved to Python 3.10" }
        ]
       },
 
