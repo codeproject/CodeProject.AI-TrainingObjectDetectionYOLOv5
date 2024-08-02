@@ -24,11 +24,11 @@ oneStepPIP=false
 
 if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] || 
    [ "${edgeDevice}" = "Radxa ROCK"   ] || [ "${edgeDevice}" = "Jetson"    ]; then
-    module_install_errors="Unable to install on Pi, ROCK or Jetson hardware."
+    moduleInstallErrors="Unable to install on Pi, ROCK or Jetson hardware."
 fi
 
 # Supporting libraries so the PIP installs will work
-if [ "$module_install_errors" = "" ] && [ "$os" = "linux" ] && [ "$architecture" == "x86_64" ]; then
+if [ "$moduleInstallErrors" = "" ] && [ "$os" = "linux" ] && [ "$architecture" == "x86_64" ]; then
 
     # ensure libcurl4 is present
     installAptPackages "libcurl4"
@@ -41,7 +41,7 @@ if [ "$module_install_errors" = "" ] && [ "$os" = "linux" ] && [ "$architecture"
 
         if [ "$isAdmin" = true ] || [ "$attemptSudoWithoutAdminRights" = true ]; then
 
-            module_install_errors=""
+            moduleInstallErrors=""
 
             if [ "$os_name" != "debian" ]; then
                 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
@@ -74,12 +74,12 @@ if [ "$module_install_errors" = "" ] && [ "$os" = "linux" ] && [ "$architecture"
 fi
  
 # PyTorch-DirectML not working for this module
-# if [ "$module_install_errors" = "" ] && [ "$hasCUDA" != true ] && [ "$os" = "linux" ]; then
+# if [ "$moduleInstallErrors" = "" ] && [ "$hasCUDA" != true ] && [ "$os" = "linux" ]; then
 #    writeLine 'Installing PyTorch-DirectML...'
 #    installPythonPackagesByName "torch-directml" "PyTorch DirectML plugin"
 # fi
 
-if [ "$module_install_errors" = "" ] && [ "$os" = "macos" ]; then
+if [ "$moduleInstallErrors" = "" ] && [ "$os" = "macos" ]; then
     write 'Installing updated setuptools in venv...' $color_primary
     "$venvPythonCmdPath" -m pip install -U setuptools >/dev/null 2>/dev/null &
     spin $!
@@ -92,10 +92,10 @@ if [ "$os_name" = "Big Sur" ]; then   # macOS 11.x on Intel, kernal 20.x
     installPythonPackagesByName "opencv-python==4.6.0.66" "OpenCV 4.6.0.66 for macOS 11.x"
 fi
 
-if [ "$module_install_errors" = "" ]; then
+if [ "$moduleInstallErrors" = "" ]; then
     # Download the models and store in /assets and /custom-models (already in place in docker)
     getFromServer "models/" "models-yolo5-pt.zip"       "assets" "Downloading Standard YOLO models..."
 
     # TODO: Check assets created and has files
-    # module_install_errors=...
+    # moduleInstallErrors=...
 fi
