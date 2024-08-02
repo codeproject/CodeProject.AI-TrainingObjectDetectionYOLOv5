@@ -3,7 +3,7 @@
 
     "TrainingObjectDetectionYOLOv5": {
       "Name": "Training for YoloV5 6.2",
-      "Version": "1.6.5",
+      "Version": "1.7.0",
 
       "PublishingInfo" : {
         "Description": "Train custom models for YOLOv5 v6.2 with support for CPUs, CUDA enabled GPUs, and Apple Silicon.", 
@@ -55,11 +55,12 @@
           { "ModuleVersion": "1.5.2", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-16", "ReleaseNotes": "Updated modulesettings schema" },
           { "ModuleVersion": "1.5.3", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
           { "ModuleVersion": "1.6.0", "ServerVersionRange": [ "2.5.0-RC6", ""    ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
-          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2",     ""    ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
-          { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
-          { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4",     ""    ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." },
-          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected Numpy 2.0 issue" },
-          { "ModuleVersion": "1.6.5", "ServerVersionRange": [ "2.6.5",     ""    ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Moved to Python 3.10" }
+          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.5.2",  "2.6.0"  ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
+          { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.5.4",  "2.6.0"  ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Corrects issues with display of progress and status."},
+          { "ModuleVersion": "1.6.3", "ServerVersionRange": [ "2.5.4",  "2.6.0"  ], "ReleaseDate": "2024-02-16", "ReleaseNotes": "Correcting startup file." },
+          { "ModuleVersion": "1.6.4", "ServerVersionRange": [ "2.6.5",  "2.7.0"  ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected NumPy 2.0 issue" },
+          { "ModuleVersion": "1.6.5", "ServerVersionRange": [ "2.6.5",  "2.7.0"  ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Moved to Python 3.10" },
+          { "ModuleVersion": "1.7.0", "ServerVersionRange": [ "2.8.0",  ""       ], "ReleaseDate": "2024-08-02", "ReleaseNotes": "Updated for server 2.8" }
        ]
       },
 
