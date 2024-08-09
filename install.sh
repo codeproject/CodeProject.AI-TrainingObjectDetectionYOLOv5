@@ -20,7 +20,7 @@ if [ "$1" != "install" ]; then
 fi
 
 # This is needed. 
-oneStepPIP=false
+oneStepPIP=true
 
 if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] || 
    [ "${edgeDevice}" = "Radxa ROCK"   ] || [ "${edgeDevice}" = "Jetson"    ]; then

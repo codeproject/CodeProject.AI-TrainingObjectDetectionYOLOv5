@@ -57,3 +57,33 @@ fiftyone                    # Installing fiftyone, for building datasets and com
 CodeProject-AI-SDK          # Installing the CodeProject.AI SDK
 
 # last line empty
+
+# This works:
+# numpy-1.26.4 
+# urllib3-1.26.19
+# 
+# matplotlib-3.9.1.post1
+# opencv-python-4.8.1.78
+# Pillow-9.5.0
+# PyYAML-6.0.2 
+# requests-2.32.3  
+# scipy-1.14.0 
+# 
+# torch-2.2.2 
+# torchvision-0.17.2 
+# 
+# tqdm-4.66.5
+# protobuf-3.20.1
+# tensorboard-data-server-0.7.2
+# 
+# seaborn-0.13.2
+# pandas-2.2.2 
+# 
+# thop-0.1.1.post2209072238 
+# psutil-6.0.0
+# ipython-8.26.0
+# 
+# yolov5-6.2.3
+# fiftyone-0.24.1 
+# 
+# CodeProject-AI-SDK-0.0.13
