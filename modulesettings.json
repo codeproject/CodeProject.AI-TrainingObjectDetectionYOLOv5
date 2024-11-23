@@ -13,7 +13,7 @@
         "License": "GPL-3.0",
         "LicenseUrl": "https://opensource.org/licenses/GPL-3.0",
         "Author": "Matthew Dennis",
-        "Homepage": "https://codeproject.com/ai",
+        "Homepage": "https://https://github.com/codeproject/CodeProject.AI-Server/",
         "BasedOn": "Ultralytics YOLOv5",
         "BasedOnUrl": "https://github.com/ultralytics/yolov5"
       },
