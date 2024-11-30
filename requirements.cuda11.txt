@@ -18,11 +18,11 @@ scipy>=1.4.1                # Installing SciPy, a library for mathematics, scien
 # --index-url https://download.pytorch.org/whl/cu118
 # torchvision==0.15.2+cu118 # Installing TorchVision, for working with computer vision models
 
-## For CUDA 11.7
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.13.0+cu117         # Installing PyTorch, an open source machine learning framework
---find-links https://download.pytorch.org/whl/torch_stable.html
-torchvision==0.14.0+cu117   # Installing TorchVision, for working with computer vision models
+## For CUDA 11.7 (will work in CUDA 11.8)
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==1.13.1+cu117         # Installing PyTorch, an open source machine learning framework
+--extra-index-url https://download.pytorch.org/whl/cu117
+torchvision==0.14.1+cu117   # Installing TorchVision, for working with computer vision models
 
 tqdm>=4.64.0                # Installing tdqm, the Fast, Extensible Progress Meter
 
